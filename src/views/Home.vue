@@ -1,18 +1,29 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <welcome-example :algo="unaVariable"></welcome-example>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+// Este es un componente que viene de muestra cuando se crea un nuevo proyecto con Vue,
+// lo dejaré comentado porque hay links que te pueden servir...
+// import HelloWorld from '@/components/HelloWorld.vue';
+
+// Así se importa un componente:
+import WelcomeExample from '../components/WelcomeExample.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    // HelloWorld,
+    WelcomeExample,
+  },
+  data() {
+    return {
+      unaVariable: 'una cosa cualquiera',
+    };
   },
 };
 </script>
