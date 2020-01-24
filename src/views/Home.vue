@@ -18,7 +18,7 @@ export default {
   name: 'home',
   components: {
     // HelloWorld,
-    WelcomeExample,
+    'welcome-example': WelcomeExample,
   },
   data() {
     return {
