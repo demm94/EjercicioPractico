@@ -1,6 +1,6 @@
 <template>
     <div id="add-btn">
-        <button type="button" class="btn btn-primary barra" data-toggle="modal" data-target="#addModal">Agregar Hamburguesa</button>
+        <button type="button" class="btn btn-primary barra mb-3 mt-2" data-toggle="modal" data-target="#addModal">Agregar Hamburguesa</button>
         <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -18,6 +18,7 @@
                             <input v-model="calorias" class="form-control" placeholder="Ingrese calorias" type="number" min="0" id="calorias">
                         </p>
                         <p>
+                            <h5>Seleccione ingredientes:</h5>
                             <input type="checkbox" id="palta" value="Palta" v-model="ingredientes">
                             <label class="radio-btn" for="palta">Palta</label>
                             <input type="checkbox" id="tomate" value="Tomáte" v-model="ingredientes">
